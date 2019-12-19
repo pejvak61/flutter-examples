@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Personal Expenses',
       theme: ThemeData(
-          primarySwatch: Colors.purple,
-          accentColor: Colors.amber,
+          primarySwatch: Colors.indigo,
+          accentColor: Colors.deepOrange,
           // errorColor: Colors.red,
           fontFamily: 'Quicksand',
           textTheme: ThemeData.light().textTheme.copyWith(
@@ -48,18 +48,54 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransactions = [
-    // Transaction(
-    //   id: 't1',
-    //   title: 'New Shoes',
-    //   amount: 69.99,
-    //   date: DateTime.now(),
-    // ),
-    // Transaction(
-    //   id: 't2',
-    //   title: 'Weekly Groceries',
-    //   amount: 16.53,
-    //   date: DateTime.now(),
-    // ),
+    Transaction(
+      id: 't1',
+      title: '4 Books',
+      amount: 135.75,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day-5),
+    ),
+    Transaction(
+      id: 't2',
+      title: 'RAM DDR4 8GB Apacer',
+      amount: 99.99,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day-4),
+    ),
+    Transaction(
+      id: 't3',
+      title: 'SSD External 1TB',
+      amount: 299.99,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day-3),
+    ),
+    Transaction(
+      id: 't4',
+      title: 'coca-cola',
+      amount: 99.99,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day-2),
+    ),
+    Transaction(
+      id: 't5',
+      title: 'shopping',
+      amount: 108,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day-1),
+    ),
+    Transaction(
+      id: 't6',
+      title: 'cinema',
+      amount: 20,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day),
+    ),
+    Transaction(
+      id: 't7',
+      title: 'gym',
+      amount: 35,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day),
+    ),
+    Transaction(
+      id: 't8',
+      title: 'snacks',
+      amount: 80,
+      date: DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day),
+    ),
   ];
 
   List<Transaction> get _recentTransactions {

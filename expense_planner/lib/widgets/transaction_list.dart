@@ -34,16 +34,16 @@ class TransactionList extends StatelessWidget {
           : ListView.builder(
               itemBuilder: (ctx, index) {
                 return Card(
-                  elevation: 5,
+                  elevation: 1, //shadow
                   margin: EdgeInsets.symmetric(
-                    vertical: 8,
-                    horizontal: 5,
+                    vertical: 5,
+                    horizontal: 10,
                   ),
                   child: ListTile(
                     leading: CircleAvatar(
                       radius: 30,
                       child: Padding(
-                        padding: EdgeInsets.all(6),
+                        padding: EdgeInsets.all(10),
                         child: FittedBox(
                           child: Text('\$${transactions[index].amount}'),
                         ),

@@ -7,6 +7,9 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'home.dart';
 import 'user.dart';
 
+// final GoogleSignIn _googleSignIn = GoogleSignIn();
+// final FirebaseAuth _auth = FirebaseAuth.instance;
+
 void main() {
   runApp(App());
 }
